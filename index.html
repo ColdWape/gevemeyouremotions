@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавь эмоцию!</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/6878db0f47.js" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main-block">
+            <div class="main-text">
+                Добавь эмоцию
+            </div>
+            <form class="text-input">
+                <div class="mb-3">
+                    <input type="text" class="form-controller" placeholder="Введите предложение" aria-label="Username">
+                </div>
+                <div class="radio-inputs">
+                    
+                      
+                      <div class="form_radio_btn">
+                        <input id="positive" type="radio" name="sentiment" value="positive">
+                        <label for="positive">Позитивная эмоция</label>
+                    </div>
+                     
+                    <div class="form_radio_btn">
+                        <input id="neautral" type="radio" name="sentiment" value="neautral">
+                        <label for="neautral">Отсутствует эмоция</label>
+                    </div>
+                     
+                    <div class="form_radio_btn">
+                        <input id="negative" type="radio" name="sentiment" value="negative">
+                        <label for="negative">Негативная эмоция</label>
+                    </div>
+                    
+                </div>
+                <div>
+                    <button type="submit" class="sbmt-btn">Готово</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="info-btn-block">
+        <div class="info-btn" onclick="show_info()">
+            Информация
+        </div>
+        <!-- <button></button> -->
+    </div>
+    <div class="info-block" id="infoBlock">
+        <div class="info-header">
+            <div class="info-header-name">
+                Информация о ресурсе
+            </div>
+            <div class="info-header-escape" onclick="hide_info()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <!-- <div class="over-info-text"> -->
+        <div class="info-text">
+            <p>Данный ресурс предназначен для сбора текстов с их эмоциональной окраской.
+            </p>
+            <p>Как пользоваться:
+            необходимо написать предложение в поле для ввода, затем выбрать подходящую (по Вашему мнению) эмоцию и нажать кнопку "готово".
+            </p>
+            
+            <p>
+                Вот несколько примеров эмоциональной окраски текста:
+            </p>
+            <p>
+                <i class="fa-solid fa-greater-than"></i> Наша басктобольная команда вчера проиграла в турнире - <b>негативная эмоция</b>
+            </p>
+            <p>
+                <i class="fa-solid fa-greater-than"></i> Представляешь, я вчера повстречала такого классного парня - <b>позитивная эмоция</b>
+            </p>
+            <p>
+                <i class="fa-solid fa-greater-than"></i> В состав яблочного сока входит как кальций, так и магний - <b>отсутствует эмоция</b>
+            </p>
+            
+        </div>
+    <!-- </div> -->
+    </div>
+</body>
+</html>
